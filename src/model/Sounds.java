@@ -93,9 +93,11 @@ public class Sounds {
     public static String rocketLaunch;
     public static String sLaser;
     public static String whatAboutHalo;
+    public static String whatTheLadiesLike;
     public static String wraithBoost;
     public static String wraithMortar;
     public static String haloAccordion;
+    public static String tipOfTheSpear;
 // Computer Science Teachers Sounds
     // Park
     public static String areYouWithMePark;
@@ -232,9 +234,11 @@ public class Sounds {
         rocketLaunch = "../TermProject/src/Sounds/Halo/RocketLaunch.wav";
         sLaser = "../TermProject/src/Sounds/Halo/SLaser.wav";
         whatAboutHalo = "../TermProject/src/Sounds/Halo/WhatAboutHalo.wav";
+        whatTheLadiesLike = "../TermProject/src/Sounds/Halo/WhatTheLadiesLike.wav";
         wraithBoost = "../TermProject/src/Sounds/Halo/WraithBoost.wav";
         wraithMortar = "../TermProject/src/Sounds/Halo/WraithMortar.wav";
         haloAccordion = "../TermProject/src/Sounds/Halo/HaloAccordion.wav";
+        tipOfTheSpear = "../TermProject/src/Sounds/Halo/TipOfTheSpear.wav";
     // Computer Science Teacher Sounds
         areYouWithMePark = "../TermProject/src/Sounds/CS/AreYouWithMePark.wav";
         clearThroatPark = "../TermProject/src/Sounds/CS/ClearThroatPark.wav";
@@ -318,7 +322,7 @@ public class Sounds {
             if(song == 3) song = 0;
             else song++;
         } else if (Main.selectedMap == 2) {
-            if(song == 4) song = 4;
+            if(song == 5) song = 4;
             else song++;
         } else {
             if(song == 10) song = 5;
@@ -345,20 +349,23 @@ public class Sounds {
             loadSong(haloAccordion);
         }else if(song == 5){
             clipMusic.stop();
-            loadSong(theEntertainer);
+            loadSong(tipOfTheSpear);
         }else if(song == 6){
             clipMusic.stop();
-            loadSong(snowAccordion);
+            loadSong(theEntertainer);
         }else if(song == 7){
             clipMusic.stop();
-            loadSong(battleHymnAccordion);
+            loadSong(snowAccordion);
         }else if(song == 8){
             clipMusic.stop();
-            loadSong(takeOnMeAccordion);
+            loadSong(battleHymnAccordion);
         }else if(song == 9){
             clipMusic.stop();
-            loadSong(vivaAccordion);
+            loadSong(takeOnMeAccordion);
         }else if(song == 10){
+            clipMusic.stop();
+            loadSong(vivaAccordion);
+        }else if(song == 11){
             clipMusic.stop();
             loadSong(sSThemeAccordion);
         }

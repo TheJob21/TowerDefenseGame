@@ -34,8 +34,6 @@ public class Wraith extends HaloEnemy{
         else if(super.state == STATE_MOVING_LEFT){
             WraithImage = Images.Wraith2;
         }
-        if(super.done && !Sounds.clip.isActive())
-            Sounds.loadSound(Sounds.creditsWillDoFine);
         animStrategy.animate(); // strategy design pattern
         if(location.x >= 1 && location.x <= this.UNIT_MOVE && location.y <= 90 && location.y >= 87 && !REACHED_END) Sounds.loadSound(Sounds.wraithBoost);
         if(location.x >= 1 && location.x <= this.UNIT_MOVE && location.y <= 264 && location.y >= 184) Sounds.loadSound(Sounds.wraithMortar);
