@@ -3,7 +3,6 @@ package model.Enemies.CSDepartment;
 import controller.Main;
 import model.Enemies.*;
 import model.GameFigure;
-import model.Sounds;
 
 import java.awt.*;
 import java.awt.geom.Point2D;

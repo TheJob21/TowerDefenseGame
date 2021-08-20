@@ -1,7 +1,5 @@
 package model.Enemies;
 
-import model.Enemies.StarWars.SWEnemy;
-
 public class EnemyAnimMovingDown implements EnemyAnimStrategy {
 
     private Enemy context;
