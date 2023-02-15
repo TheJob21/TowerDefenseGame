@@ -23,6 +23,7 @@ public class Images {
     public static BufferedImage Qian;
     public static BufferedImage Sung;
     public static BufferedImage Turner;
+    public static BufferedImage Ladan;
 
     public Images(){
         try{
@@ -123,6 +124,12 @@ public class Images {
         }
         try{
             Turner = ImageIO.read(new File("../TermProject/src/Images/TurnerFace.png"));
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        try{
+            Ladan = ImageIO.read(new File("../TermProject/src/Images/Ladan.png"));
         }
         catch (IOException e) {
             e.printStackTrace();

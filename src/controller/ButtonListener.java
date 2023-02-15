@@ -31,9 +31,7 @@ public class ButtonListener extends JFrame implements ActionListener {
             if (Main.selectedMap == 1) {
                 if(no){ Sounds.loadSound(Sounds.no); no = false;}
                 else{ Sounds.loadSound(Sounds.yup); no = true;}
-            } else if (Main.selectedMap == 2){
-
-            } else{
+            } else if (Main.selectedMap == 3) {
                 if(no){ Sounds.loadSound(Sounds.funTurner); no = false;}
                 else{ Sounds.loadSound(Sounds.objectObjectTurner); no = true;}
             }
@@ -47,6 +45,10 @@ public class ButtonListener extends JFrame implements ActionListener {
             Sounds.loadSong(Sounds.haloAccordion);
         }else if(e.getSource() == win.getlvl3()){
             Main.selectedMap = 3;
+            Sounds.clipMusic.stop();
+            Sounds.loadSong(Sounds.theEntertainer);
+        }else if(e.getSource() == win.getlvl4()){
+            Main.selectedMap = 4;
             Sounds.clipMusic.stop();
             Sounds.loadSong(Sounds.theEntertainer);
         }else if(e.getSource() == win.getNewGunTower()){
@@ -73,10 +75,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     if(Main.iteration == 1)Sounds.loadSound(Sounds.tonightUhTurner); // Sound effect
                     else Sounds.loadSound(Sounds.areYouWithMePark);
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.knockKnock);
                 }
 
                 Main.gameData.EnemiesSpawned = false;
@@ -99,10 +103,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     Sounds.loadSound(Sounds.noTime); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     if(Main.iteration == 1)Sounds.loadSound(Sounds.test2Park); // Sound effect
                     else Sounds.loadSound(Sounds.andHereWeAreTurner);
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.WhosThereShrek);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<10+waveCount;i++){
@@ -124,10 +130,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     Sounds.loadSound(Sounds.hurryChief); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     if(Main.iteration == 1)Sounds.loadSound(Sounds.doubleClickSung); // Sound effect
                     else Sounds.loadSound(Sounds.heresAnExampleTurner);
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.ShrekWho);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<1+waveCount;i++){
@@ -152,10 +160,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     if(Main.iteration == 1)Sounds.loadSound(Sounds.youCanDoThisQian); // Sound effect
                     else Sounds.loadSound(Sounds.severalPartsTurner);
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<10+waveCount;i++){
@@ -176,10 +186,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     if(Main.iteration == 1)Sounds.loadSound(Sounds.gainsControlMcD); // Sound effect
                     else Sounds.loadSound(Sounds.httpsPark);
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<15+waveCount;i++){
@@ -200,10 +212,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     if(Main.iteration == 1)Sounds.loadSound(Sounds.potentialProblem20000ErrorsTurner); // Sound effect
                     else Sounds.loadSound(Sounds.two4681012Turner);
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<1+waveCount;i++) {
@@ -224,10 +238,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     //if(Main.iteration == 1)
                     Sounds.loadSound(Sounds.areYouWithMePark); // Sound effect
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<15+waveCount;i++){
@@ -248,10 +264,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     //if(Main.iteration == 1)
                     Sounds.loadSound(Sounds.greenTriangleSung); // Sound effect
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<15+waveCount;i++){
@@ -272,10 +290,12 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     //if(Main.iteration == 1)
                     Sounds.loadSound(Sounds.justSkipSung); // Sound effect
                     Main.CSTeacherTurn++;
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 Main.gameData.EnemiesSpawned = false;
                 for(int i=0;i<waveCount;i++) {
@@ -295,9 +315,11 @@ public class ButtonListener extends JFrame implements ActionListener {
                     //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
-                } else {
+                } else if (Main.selectedMap == 3) {
                     //if(Main.iteration == 1)
                     Sounds.loadSound(Sounds.comprehensiveFinalQian); // Sound effect
+                } else {
+                    Sounds.loadSound(Sounds.getOutOfMySwamp);
                 }
                 if(!Main.win.selectedEndless()){
                     Main.lastWave = true;

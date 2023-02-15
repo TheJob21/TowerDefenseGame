@@ -130,7 +130,7 @@ public class PlayerInputEventQueue {
             }
         }
     // Checks for collisions with the path segments or river
-        if (Main.selectedMap == 1) {
+        if (Main.selectedMap == 1 || Main.selectedMap == 4) {
             if ((e.getY() > 51 && e.getY() < 131) && ((e.getX() < 268) || (e.getX() > 377 && e.getX() < 702) || e.getX() > 802)) {
                 // Segments 1-3
                 return true;

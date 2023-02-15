@@ -14,7 +14,7 @@ public class MyCanvas extends JPanel {
     public void render(){
     // off-screen double buffer image
         BufferedImage map = null;
-        if (Main.selectedMap == 1) {
+        if (Main.selectedMap == 1 || Main.selectedMap == 4) {
             try { // Gets map 1 to display on screen background
                 map = ImageIO.read(new File("../TermProject/src/Images/map.jpg"));
             } catch (Exception e) {

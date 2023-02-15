@@ -36,6 +36,7 @@ public class MyWindow extends JFrame {
     private JButton lvl1;
     private JButton lvl2;
     private JButton lvl3;
+    private JButton lvl4;
 
     public static JRadioButton[] difficulty = new JRadioButton[3];
     private JRadioButton[] endless = new JRadioButton[2];
@@ -76,7 +77,7 @@ public class MyWindow extends JFrame {
         menu.setLayout(new GridLayout(4,1));
     // Settings menu panel
         settingsPanel = new JPanel();
-        settingsPanel.setLayout(new GridLayout(8,1));
+        settingsPanel.setLayout(new GridLayout(9,1));
     // Settings menu buttons
         difficulty[0] = new JRadioButton("Easy");
         difficulty[1] = new JRadioButton("medium");
@@ -99,9 +100,12 @@ public class MyWindow extends JFrame {
         lvl2.setFocusable(false);
         lvl3 = new JButton("UCO C.S. Dept.");
         lvl3.setFocusable(false);
+        lvl4 = new JButton("Family");
+        lvl4.setFocusable(false);
         settingsPanel.add(lvl1);
         settingsPanel.add(lvl2);
         settingsPanel.add(lvl3);
+        settingsPanel.add(lvl4);
         cp.add(BorderLayout.WEST,settingsPanel);
         difficulty[0].setSelected(true);
         endless[0].setSelected(true);
@@ -169,8 +173,10 @@ public class MyWindow extends JFrame {
                 }else if (Main.selectedMap == 2) {
                     Sounds.loadSound(Sounds.whatAboutHalo);
                     textArea.setText("I need a weapon...");
-                }else {
+                }else if (Main.selectedMap == 3) {
                     textArea.setText("Don't forget you're homework assignment!");
+                }else {
+                    textArea.setText("Lat Spread!");
                 }
             }else {
                 System.exit(0);
@@ -181,6 +187,7 @@ public class MyWindow extends JFrame {
         lvl1.addActionListener(BL);
         lvl2.addActionListener(BL);
         lvl3.addActionListener(BL);
+        lvl4.addActionListener(BL);
     }
 // Return buttons
     public JButton getQuitButton(){return quitButton;}
@@ -188,6 +195,7 @@ public class MyWindow extends JFrame {
     public JButton getlvl1(){return lvl1;}
     public JButton getlvl2(){return lvl2;}
     public JButton getlvl3(){return lvl3;}
+    public JButton getlvl4(){return lvl4;}
     public JButton getNewGunTower(){return newGunTower;}
     public JButton getNewMissileTower(){return newMissileTower;}
     public JButton getNewLaserTower(){return newLaserTower;}

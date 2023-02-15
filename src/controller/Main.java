@@ -2,6 +2,7 @@ package controller;
 
 import model.*;
 import model.Enemies.CSDepartment.*;
+import model.Enemies.Family.Ladan;
 import model.Enemies.Halo.Banshee;
 import model.Enemies.Halo.Ghost;
 import model.Enemies.Halo.Wraith;
@@ -212,12 +213,14 @@ public class Main {
             Enemy = new STAP(x,y,hp,sd);
         } else if (selectedMap == 2){
             Enemy = new Ghost(x, y, hp, sd);
-        } else {
+        } else if (selectedMap == 3) {
             if (CSTeacherTurn%5 == 0)Enemy = new DrMcDaniel(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 1)Enemy = new DrTurner(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 2)Enemy = new DrPark(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 3)Enemy = new DrSung(x, y, hp, sd);
             else Enemy = new DrQian(x, y, hp, sd);
+        } else {
+            Enemy = new Ladan(x, y, hp, sd);
         }
         //Enemy.attachListener(new EnemyObserverAddNew());
         gameData.enemyObject.add(Enemy);
@@ -229,12 +232,14 @@ public class Main {
             Enemy = new ATT(x,y,hp,sd);
         } else if (selectedMap == 2) {
             Enemy = new Banshee(x, y, hp, sd);
-        } else {
+        } else if (selectedMap == 3) {
             if (CSTeacherTurn%5 == 0)Enemy = new DrMcDaniel(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 1)Enemy = new DrTurner(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 2)Enemy = new DrPark(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 3)Enemy = new DrSung(x, y, hp, sd);
             else Enemy = new DrQian(x, y, hp, sd);
+        } else {
+            Enemy = new Ladan(x, y, hp, sd);
         }
         //Enemy.attachListener(new EnemyObserverAddNew());
         gameData.enemyObject.add(Enemy);
@@ -246,12 +251,14 @@ public class Main {
             Enemy = new MTT(x,y,hp,sd);
         } else if (selectedMap == 2) {
             Enemy = new Wraith(x, y, hp, sd);
-        } else {
+        } else if (selectedMap == 3) {
             if (CSTeacherTurn%5 == 0)Enemy = new DrMcDaniel(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 1)Enemy = new DrTurner(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 2)Enemy = new DrPark(x, y, hp, sd);
             else if (CSTeacherTurn%5 == 3)Enemy = new DrSung(x, y, hp, sd);
             else Enemy = new DrQian(x, y, hp, sd);
+        } else {
+            Enemy = new Ladan(x, y, hp, sd);
         }
         //Enemy.attachListener(new EnemyObserverAddNew());
         gameData.enemyObject.add(Enemy);
@@ -263,12 +270,14 @@ public class Main {
             Enemy = new DeathStar(x,y,hp,sd);
         } else if (selectedMap == 2) {
             Enemy = new Wraith(x, y, hp, sd);
-        } else {
+        } else if (selectedMap == 3) {
             gameData.enemyObject.add(new DrQian(x,y,hp/5,sd));
             gameData.enemyObject.add(new DrPark(x-100,y,hp/5,sd));
             gameData.enemyObject.add(new DrMcDaniel(x-200,y,hp/5,sd));
             gameData.enemyObject.add(new DrTurner(x-300,y,hp/5,sd));
             Enemy = new DrSung(x-400, y, hp/5, sd);
+        } else {
+            Enemy = new Ladan(x, y, hp, sd);
         }
         //Enemy.attachListener(new EnemyObserverAddNew());
         gameData.enemyObject.add(Enemy);

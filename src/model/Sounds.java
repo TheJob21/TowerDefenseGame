@@ -145,6 +145,12 @@ public class Sounds {
     public static String takeOnMeAccordion;
     public static String theEntertainer;
     public static String vivaAccordion;
+// Family Sounds
+    // Ladan
+    public static String knockKnock;
+    public static String getOutOfMySwamp;
+    public static String ShrekWho;
+    public static String WhosThereShrek;
 
     public Sounds() {
         soundsMuted = false;
@@ -278,6 +284,10 @@ public class Sounds {
         takeOnMeAccordion = "../TermProject/src/Sounds/CS/TakeOnMeAccordion.wav";
         theEntertainer = "../TermProject/src/Sounds/CS/TheEntertainer.wav";
         vivaAccordion = "../TermProject/src/Sounds/CS/VivaAccordion.wav";
+        knockKnock = "../TermProject/src/Sounds/Family/LadanKnockKnock.wav";
+        getOutOfMySwamp = "../TermProject/src/Sounds/Family/GetOutOfMySwamp.wav";
+        ShrekWho = "../TermProject/src/Sounds/Family/ShrekWho.wav";
+        WhosThereShrek = "../TermProject/src/Sounds/Family/WhosThereShrek.wav";
         try {
             clip = AudioSystem.getClip();
             clip.open(AudioSystem.getAudioInputStream(new File(rogerRoger)));

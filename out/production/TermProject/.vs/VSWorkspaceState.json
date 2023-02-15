@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controller",
+    "\\model",
+    "\\model\\Enemies",
+    "\\model\\Enemies\\StarWars"
+  ],
+  "SelectedNode": "\\controller\\Main.java",
+  "PreviewInSolutionExplorer": false
+}
