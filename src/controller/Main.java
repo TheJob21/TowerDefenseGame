@@ -118,7 +118,7 @@ public class Main {
         else if (selectedMap == 2)
             Sounds.song = 4;
         else
-            Sounds.song = 5;
+            Sounds.song = 6;
         Sounds.playSong();
         Main.gameData.EnemiesSpawned = true;
 

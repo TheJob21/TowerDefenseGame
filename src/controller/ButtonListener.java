@@ -157,7 +157,7 @@ public class ButtonListener extends JFrame implements ActionListener {
                     }
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
@@ -183,7 +183,7 @@ public class ButtonListener extends JFrame implements ActionListener {
                     else Sounds.loadSound(Sounds.darthPlag);// Sound effect
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
@@ -209,7 +209,7 @@ public class ButtonListener extends JFrame implements ActionListener {
                     else Sounds.loadSound(Sounds.takeASeat);// Sound effect
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
@@ -235,7 +235,7 @@ public class ButtonListener extends JFrame implements ActionListener {
                     else Sounds.loadSound(Sounds.gangstas);// Sound effect
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
@@ -261,7 +261,7 @@ public class ButtonListener extends JFrame implements ActionListener {
                     else Sounds.loadSound(Sounds.againstMe);// Sound effect
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
@@ -287,7 +287,7 @@ public class ButtonListener extends JFrame implements ActionListener {
                     else Sounds.loadSound(Sounds.doneThatYourself);// Sound effect
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
@@ -312,7 +312,7 @@ public class ButtonListener extends JFrame implements ActionListener {
 
                 }else if (Main.selectedMap == 2){
                     //if(Main.iteration == 1)
-                    //Sounds.loadSound(Sounds.eliteAlert); // Sound effect
+                    Sounds.loadSound(Sounds.whatTheLadiesLike); // Sound effect
                     //else if(Main.iteration == 2)Sounds.loadSound(Sounds.shootHerOrSomething); // Sound effect
                     //else Sounds.loadSound(Sounds.liar);// Sound effect
                 } else if (Main.selectedMap == 3) {
